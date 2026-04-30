@@ -1,6 +1,5 @@
 from pytest_bdd import scenarios, given, when, then,parsers
 from core.utils.logger import MyLogger
-logger = MyLogger().get_logger()
 from pages.FormPage import UserFormPage
 import time
 from config.env_config import Config
