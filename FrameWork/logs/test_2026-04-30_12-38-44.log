@@ -1,0 +1,8 @@
+2026-04-30 12:38:46,264 | INFO | Opening page
+2026-04-30 12:38:46,266 | INFO | Navigating to: https://testautomationpractice.blogspot.com/
+2026-04-30 12:38:53,068 | INFO | Sending keys to element: ('id', 'name')
+2026-04-30 12:38:53,273 | INFO | Sending keys to element: ('id', 'email')
+2026-04-30 12:38:53,466 | INFO | Sending keys to element: ('id', 'phone')
+2026-04-30 12:38:53,563 | INFO | Sending keys to element: ('id', 'textarea')
+2026-04-30 12:38:53,663 | INFO | Selecting day checkbox: monday
+2026-04-30 12:38:53,663 | INFO | Clicking on element: ('xpath', "//input[@type='checkbox' and @id='monday']")

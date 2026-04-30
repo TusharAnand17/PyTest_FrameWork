@@ -1,0 +1,5 @@
+2026-04-30 12:31:55,675 | INFO | Sending keys to element: ('id', 'name')
+2026-04-30 12:31:55,860 | INFO | Sending keys to element: ('id', 'email')
+2026-04-30 12:31:56,019 | INFO | Sending keys to element: ('id', 'phone')
+2026-04-30 12:31:56,154 | INFO | Sending keys to element: ('id', 'textarea')
+2026-04-30 12:31:56,299 | INFO | Clicking on element: ('xpath', "//input[@type='checkbox' and @id='monday']")

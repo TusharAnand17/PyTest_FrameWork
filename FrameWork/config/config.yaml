@@ -1,0 +1,11 @@
+qa:
+  base_url: "https://testautomationpractice.blogspot.com/"
+
+dev:
+  base_url: ""
+
+prod:
+  base_url: ""
+
+browser: chrome
+headless: false
