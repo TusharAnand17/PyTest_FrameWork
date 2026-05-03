@@ -10,6 +10,11 @@ class UserFormPage(BasePage):
     
     def day_checkbox(self, day):
         return (By.XPATH, f"//input[@type='checkbox' and @id='{day}']")
+    
+    
+    def __init__(self, driver):
+        super().__init__(driver)
+
 
     # Actions
     def enter_name(self, name):

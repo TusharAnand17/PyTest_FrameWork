@@ -1,17 +1,16 @@
-from pytest_bdd import scenarios, given, when, then,parsers
-from core.utils.logger import MyLogger
+# steps/test_user_form_steps.py
+from pytest_bdd import scenarios, given, when, parsers
 from pages.FormPage import UserFormPage
-import time
+from core.utils.logger import MyLogger
 from config.env_config import Config
 
 scenarios("ui/features/user_form.feature")
 
-
 logger = MyLogger().get_logger()
+
 
 @given("user is on form page")
 def open_form_page(driver):
-    logger.info("Opening page")
     config = Config()
     base_url = config.get("qa").get("base_url")
     logger.info(f"Navigating to: {base_url}")
@@ -19,8 +18,8 @@ def open_form_page(driver):
 
 
 @when("user fills the form with valid data")
-def fill_form():
-    form = UserFormPage()
+def fill_form(driver):
+    form = UserFormPage(driver)
     form.fill_form(
         name="Tushar",
         email="tushar@test.com",
@@ -28,8 +27,8 @@ def fill_form():
         address="Bangalore"
     )
 
+
 @when(parsers.parse('user selects "{day}" from days checkbox'))
-def select_checkbox(day):
-    form = UserFormPage()
+def select_day(driver, day):
+    form = UserFormPage(driver)
     form.select_day(day)
-    time.sleep(5)

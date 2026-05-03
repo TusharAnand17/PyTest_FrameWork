@@ -5,8 +5,8 @@ from core.driver.driver_manager import WebDriverManagerSingleton
 
 class BasePage:
 
-    def __init__(self):
-        self.driver = WebDriverManagerSingleton().get_driver()
+    def __init__(self,driver):
+        self.driver = driver
         self.wait = WebDriverWait(self.driver, 10)
         self.logger = MyLogger().get_logger()
 
