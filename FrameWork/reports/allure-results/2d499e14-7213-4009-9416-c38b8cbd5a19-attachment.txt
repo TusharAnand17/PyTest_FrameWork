@@ -1,8 +1,0 @@
-[32mINFO    [0m MyLogger:test_user_form_steps.py:15 Opening page
-[32mINFO    [0m MyLogger:test_user_form_steps.py:18 Navigating to: https://testautomationpractice.blogspot.com/
-[32mINFO    [0m MyLogger:BasePage.py:19 Sending keys to element: ('id', 'name')
-[32mINFO    [0m MyLogger:BasePage.py:19 Sending keys to element: ('id', 'email')
-[32mINFO    [0m MyLogger:BasePage.py:19 Sending keys to element: ('id', 'phone')
-[32mINFO    [0m MyLogger:BasePage.py:19 Sending keys to element: ('id', 'textarea')
-[32mINFO    [0m MyLogger:FormPage.py:34 Selecting day checkbox: monday
-[32mINFO    [0m MyLogger:BasePage.py:15 Clicking on element: ('xpath', "//input[@type='checkbox' and @id='monday']")

@@ -1,0 +1,7 @@
+FrameWork/reports
+FrameWork/logs
+FrameWork/__pycache__
+FrameWork/venv
+*.pyc
+.pytest_cache
+.idea
