@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/branch-guard/guard_branch.py",
+        "windows": "py -3 .github/hooks/branch-guard/guard_branch.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ]
+  }
+}

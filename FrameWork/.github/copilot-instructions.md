@@ -51,22 +51,33 @@ BDD documentation folders currently used:
 - .github/agents/pom-implementation.agent.md
 - .github/agents/locator-strategy.agent.md
 - .github/agents/code-structure.agent.md
+- .github/agents/github-issue-fix-pr-orchestrator.agent.md
+- .github/agents/github-issue-triage.agent.md
+- .github/agents/github-fix-pr-executor.agent.md
 
 ### Prompts
 
 - .github/prompts/generate-feature-file.prompt.md
 - .github/prompts/generate-step-definitions.prompt.md
 - .github/prompts/implement-page-object-methods.prompt.md
+- .github/prompts/github-issue-triage.prompt.md
+- .github/prompts/github-fix-pr.prompt.md
 
 ### Context
 
 - .github/context/framework-overview.md
 - .github/context/feature-patterns.md
 - .github/context/naming-conventions.md
+- .github/context/github-issue-fix-workflow.md
 
 ### Hooks
 
 - .github/hooks/logger.json
+- .github/hooks/branch-guard.json
+
+### Skills
+
+- .github/skills/github-issue-to-pr/SKILL.md
 
 The UI story validator hook is blocking and enforces:
 
@@ -74,6 +85,12 @@ The UI story validator hook is blocking and enforces:
 - UI automation relevance
 - Acceptance criteria presence
 - API-story blocking for orchestrator flow
+
+The GitHub branch guard hook is blocking and enforces:
+
+- No git operations against master/main
+- No PR head/base targeting protected branches
+- Workflow branch lock to copilot-branch
 
 ## Input Contract
 
@@ -214,6 +231,8 @@ Never return chat-only outputs when file artifacts are required.
 - Avoid duplicate assets and unnecessary new files.
 - Follow DRY across scenarios, step definitions, and page objects.
 - Keep generated docs concise but complete.
+- For GitHub issue-to-PR automation, always operate on copilot-branch.
+- Never commit to, push to, merge into, or checkout master/main.
 
 ## Fast Quality Checklist (Run Before Final Response)
 
