@@ -8,6 +8,7 @@ tools:
   - writeFile
   - edit/createFile
   - searchFiles
+  - atlassian/*
 ---
 
 # Feature Generator Agent
@@ -67,7 +68,7 @@ Follow every rule in prompt strictly.
 ## Step 3 - Extract From Analysis File
 
 From analysis file extract:
-Actor : for Feature header Goal : for Feature header Benefit : for Feature header Positive Scenarios : PS-01, PS-02... Negative Scenarios : NS-01, NS-02... Edge Cases : EC-01, EC-02... Validations : VAL-01, VAL-02... Boundary Conditions : BC-01, BC-02... Reusable Steps : use in scenarios Existing Terminology: use in wording
+Actor : for Feature header Goal : for Feature header Benefit : for Feature header Positive Scenarios : PS-01, PS-02... Negative Scenarios : NS-01, NS-02... Edge Cases : EC-01, EC-02... Validations : VAL-01, VAL-02... Boundary Conditions : BC-01, BC-02... Additional Context From Confluence : use for scenario completeness and business phrasing Reusable Steps : use in scenarios Existing Terminology: use in wording
 
 ---
 
@@ -109,9 +110,6 @@ Always save as physical file.
 
 After saving return:
 ✅ GENERATOR COMPLETE saved_to : tests/ui/features/<feature_name>.feature status : FEATURE_FILE_GENERATED
-
-
-
 
 ---
 

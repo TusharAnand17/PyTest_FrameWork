@@ -1,0 +1,76 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ],
+    "PreCompact": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ],
+    "SubagentStart": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ],
+    "SubagentStop": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python .github/hooks/session-logger/log_hook_event.py",
+        "windows": "py -3 .github/hooks/session-logger/log_hook_event.py",
+        "cwd": ".",
+        "timeout": 10
+      }
+    ]
+  }
+}

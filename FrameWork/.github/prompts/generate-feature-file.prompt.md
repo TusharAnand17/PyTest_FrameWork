@@ -29,6 +29,7 @@ Negative Scenarios : NS-01, NS-02...
 Edge Cases : EC-01, EC-02... 
 Validations : VAL-01, VAL-02... 
 Boundary Conditions : BC-01, BC-02... 
+Additional Context From Confluence : use to improve business intent, constraints, and expected outcomes in scenarios 
 Reusable Steps : use in scenarios 
 Existing Terminology: use in wording
 
@@ -86,6 +87,7 @@ Must include ALL from analysis file:
 ✅ All Negative Scenarios 
 ✅ All Edge Cases 
 ✅ All Boundary Conditions
+✅ Relevant scenario implications from Additional Context From Confluence (when present)
 
 ---
 

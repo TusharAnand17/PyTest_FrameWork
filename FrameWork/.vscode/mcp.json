@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "type": "http"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["playwright-mcp"]
+    }
+  }
+}
